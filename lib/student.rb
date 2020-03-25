@@ -21,8 +21,8 @@ class Student
     SQL
     
     DB[:conn].execute(sql).each do |student|
-      obj = new_from_db(student)
-      binding.pry
+     new_obj = new_from_db(student)
+    new_obj  
     end
   end 
 
@@ -35,7 +35,7 @@ class Student
     SQL
     binding.pry
     DB[:conn].execute(sql).map do |s|
-    
+      
   end
   end
   
