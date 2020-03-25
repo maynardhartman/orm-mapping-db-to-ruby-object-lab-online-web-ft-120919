@@ -34,7 +34,7 @@ class Student
       LIMIT 1
     SQL
     DB[:conn].execute(sql).each do |s|
-      return(s)
+      
   end
   end
   
