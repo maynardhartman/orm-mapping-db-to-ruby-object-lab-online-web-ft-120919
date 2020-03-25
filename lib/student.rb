@@ -33,9 +33,8 @@ class Student
       WHERE name = ?
       LIMIT 1
     SQL
-    binding.pry
-    DB[:conn].execute(sql).map do |s|
-      
+    DB[:conn].execute(sql).each do |s|
+      return(s)
   end
   end
   
